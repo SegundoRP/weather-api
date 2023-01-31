@@ -1,8 +1,8 @@
-class Api::V1::LocationsController < ApiController
+class Api::V1::LocationsController < ApplicationController
   before_action :set_location
 
   def show
-    render json: @location, include: ['recordings']
+    # render json: @location, include: ['recordings']
   end
 
   private
